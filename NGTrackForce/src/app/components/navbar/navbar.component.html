@@ -77,6 +77,9 @@
         <li *ngIf='isAdmin' class="nav-item">
           <a id="salesforce" class="nav-link" [routerLink]="['/salesforce']" routerLinkActive="active">Salesforce</a>
         </li>
+        <li *ngIf='isStaging' class="nav-item">
+          <a id="salesforce" class="nav-link" [routerLink]="['/salesforce']" routerLinkActive="active">Client Feedback</a>
+        </li>
         <li class="nav-item dropdown mr-auto">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">

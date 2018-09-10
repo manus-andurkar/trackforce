@@ -26,6 +26,7 @@ import { DeployedComponent } from '../components/deployed/deployed.component';
 import { UndeployedComponent } from '../components/undeployed/undeployed.component';
 import { InvalidSessionComponent } from '../components/invalid-session/invalid-session.component';
 import { SalesforceComponent } from '../components/salesforce/salesforce.component';
+import { ClientFeedbackComponent } from '../components/client-feedback/client-feedback.component';
 
 
 /**
@@ -160,6 +161,12 @@ export const appRoutes: Routes = [
     component: SalesforceComponent,
     data: {expectedRoles: [1]}
   },
+  // {
+  //   path: 'client-feedback',
+  //   canActivate: [AuthGuard],
+  //   component: ClientFeedbackComponent,
+  //   data: {expectedRoles: [4]}
+  // },
   {
     // must be LAST in this array because this matches all other paths (fallback)
     path: '**',
